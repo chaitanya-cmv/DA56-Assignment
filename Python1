@@ -1,0 +1,85 @@
+# Python Assignment 1: Data Structures - Strings & Tuples
+
+
+# 1. STRING CONCATENATION
+
+string1 = "Hello "
+name = input("Enter your Name: ")
+
+string2 = string1 + name
+
+print(string2)
+
+string3 = ", welcome to Python programming"
+
+string2 = string2 + string3
+
+print(string2)
+
+
+# 2. STRING SLICING AND INDEXING
+
+string = string2
+
+# a. First character
+print("First character:", string[0])
+
+# b. Last character
+print("Last character:", string[-1])
+
+# c. First 5 characters
+print("First 5 characters:", string[:5])
+
+# d. Last 11 characters
+print("Last 11 characters:", string[-11:])
+
+# e. Reverse the string
+print("Reverse:", string[::-1])
+
+# f. Print the word "Python"
+python_position = string.find("Python")
+print("Word Python:", string[python_position:python_position + 6])
+
+
+# 3. STRING METHODS
+
+strM = "Python beginner tutorial"
+
+# a. Uppercase
+print("Uppercase:", strM.upper())
+
+# b. Lowercase
+print("Lowercase:", strM.lower())
+
+# c. Capitalize
+print("Capitalized:", strM.capitalize())
+
+# d. Count 't'
+print("Number of 't' characters:", strM.count("t"))
+
+# e. Replace Python with Machine Learning
+new_string = strM.replace("Python", "Machine Learning")
+print("After replacement:", new_string)
+
+
+# 4. TUPLES
+
+t1 = (10, 20, 30)
+t2 = (40, 50, 60)
+
+# a. Concatenate the two tuples
+t_combine = t1 + t2
+print("Combined tuple:", t_combine)
+
+# b. Repeat t_combine 3 times
+t_repeat = t_combine * 3
+print("Repeated tuple:", t_repeat)
+
+# c. Access the 3rd element
+print("3rd element:", t_combine[2])
+
+# d. First three elements
+print("First three elements:", t_combine[:3])
+
+# e. Last three elements
+print("Last three elements:", t_combine[-3:])
